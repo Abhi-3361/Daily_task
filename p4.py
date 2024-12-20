@@ -1,10 +1,21 @@
-# Number of rows for the pyramid
-n = int(input("enter rows:"))
+# Given string
+string = "Welcome to python Training"
 
-# Loop to print each row
-for i in range(n):
-    # Print spaces: the number of spaces increases as we go down
-    print(' ' * i, end='')
-    
-    # Print stars: the number of stars decreases as we go down
-    print('*' * (2 * (n - i) - 1))
+# Define a string containing vowels
+vowels = "aeiouAEIOU"
+
+# Initialize a counter for vowels
+vowel_count = 0
+
+# Initialize an empty string to store the vowels found
+vowel_found = ""
+
+# Iterate through each character in the string
+for char in string:
+    if char in vowels:
+        vowel_count += 1
+        vowel_found += char + " "
+
+# Display the count and the vowels found
+print(f"Vowels in the string: {vowel_found}")
+print(f"Total number of vowels: {vowel_count}")
