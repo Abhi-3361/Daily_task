@@ -1,14 +1,15 @@
-# Given string
-string = "Deeptech Python Training"
-
-# Split the string into a list of words
-words = string.split()
-
-# Reverse the list of words
-reversed_words = words[::-1]
-
-# Join the reversed words back into a string
-reversed_string = ' '.join(reversed_words)
-
-# Print the reversed string
-print(reversed_string)
+#take input from the user
+number=int(input("enter a number:"))
+#initialize sum
+sum=0
+#find the sum of cube of each digit
+temp=number
+while temp>0:
+    digit=temp%10
+    sum+=digit**3
+    temp//=10
+#display the result
+if number==sum:
+    print(number,"is an armstrong number.")
+else:
+    print(number,"is not an armstrong number.")

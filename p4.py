@@ -1,21 +1,13 @@
-# Given string
-string = "Welcome to python Training"
+def fibonacci_series(limit):
+    fib_sequence=[]
+    a=0
+    b=1
+    while a<=limit:
+        fib_sequence.append(a)
+        a=b
+        b=a+b
+    return fib_sequence
 
-# Define a string containing vowels
-vowels = "aeiouAEIOU"
-
-# Initialize a counter for vowels
-vowel_count = 0
-
-# Initialize an empty string to store the vowels found
-vowel_found = ""
-
-# Iterate through each character in the string
-for char in string:
-    if char in vowels:
-        vowel_count += 1
-        vowel_found += char + " "
-
-# Display the count and the vowels found
-print(f"Vowels in the string: {vowel_found}")
-print(f"Total number of vowels: {vowel_count}")
+limit=int(input("enter the number:"))
+fib_list=fibonacci_series(limit)
+print(fib_list)

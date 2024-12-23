@@ -1,8 +1,11 @@
-# Given string with newlines
-string = "\nBest \nDeeptech \nPython \nTraining\n"
-
-# Remove newline characters by replacing them with an empty string
-cleaned_string = string.replace('\n', '')
-
-# Print the cleaned string
-print(cleaned_string)
+#defining a function to reverse the string
+def isPalindrome(check_string):
+    return check_string[::-1]
+#asking user the string 
+check_string=input("enter the string to check palindrome:")
+reverse_string=isPalindrome(check_string)
+#printting that the string is palindrome or not
+if reverse_string==check_string:
+    print("it is a palindromee")
+else:
+    print("it is not a palindrome")
