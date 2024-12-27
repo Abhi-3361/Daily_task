@@ -1,11 +1,11 @@
-#defining a function to reverse the string
-def isPalindrome(check_string):
-    return check_string[::-1]
-#asking user the string 
-check_string=input("enter the string to check palindrome:")
-reverse_string=isPalindrome(check_string)
-#printting that the string is palindrome or not
-if reverse_string==check_string:
-    print("it is a palindromee")
-else:
-    print("it is not a palindrome")
+# Sample Dictionaries
+dic1 = {1: 10, 2: 20}
+dic2 = {3: 30, 4: 40}
+dic3 = {5: 50, 6: 60}
+
+# Method 1: Using the update() method
+result_dict = dic1.copy()  # Create a copy of dic1 to avoid modifying the original
+result_dict.update(dic2)  # Add dic2 to result_dict
+result_dict.update(dic3)  # Add dic3 to result_dict
+
+print("Concatenated Dictionary:", result_dict)
